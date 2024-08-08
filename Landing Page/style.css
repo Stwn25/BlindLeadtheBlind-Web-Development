@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "ABeeZee", sans-serif;
+}
+
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    min-height: 70px;
+    position: fixed;
+    box-shadow: 0 0 30px rgb(129, 129, 129);
+    align-content: center;
+    background-color: white;
+    z-index: 999;
+}
+
+.navigation{
+    max-width: 1540px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.brand-logo{
+    width: 85px;
+}
+
+.navigation ul{
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.navigation a{
+    color: black;
+}
+
+.whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp a{
+    font-size: 0.8em;
+}
+
+.whatsapp img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* hero section */
+
+.container-hero{
+    width: 100%;
+    background-color: #E4EBF2;
+}
+
+.hero{
+    max-width: 1540px;
+    margin: 0 auto;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.teks-cta{
+    width: 400px;
+    margin-top: 160px;
+}
+
+.teks-cta > *{
+    margin-top: 20px;
+}
+
+.teks-cta a{
+    color: white;
+    background-color: #252942;
+    padding: 20px 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    width: 35%;
+}
+
+
+.hero-img{
+    width: 400px;
+    position: relative;
+}
+
+.hero-img .orang{
+    position: absolute;
+    bottom: 75px;
+}
+
+.hero-img .abstrak{
+    margin-top: 40%;
+}
+
+/* choose us */
+
+.container-choose-us{
+    width: 100%;
+    min-height: 320px;
+    color: white;
+}
+
+.choose-us{
+    max-width: 1024px;
+    margin: -20px auto;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+article{
+    width: 220px;
+    height: 300px;
+    background-color: #252942;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    align-content: center;
+}
+
+.choose-us img{
+    width: 50%;
+}
+
+.choose-us h4{
+    color: white;
+}
+
+.choose-us p{
+    color: white;
+    margin-top: 10px;
+}
+
+/* Tentang kami */
+
+.container-tentang-kami{
+    width: 100%;
+    background-color: white;
+    min-height: 800px;
+}
+
+.tentang-kami{
+    max-width: 1540px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.tentang-kami h3{
+    background-color: #ffcdab;
+    color: #FF6400;
+    padding: 15px 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.tentang-kami img{
+    max-width: 850px;
+    border: 0.1px solid rgb(182, 182, 182);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 10px 15px 20px rgb(129, 129, 129);
+}
+
+.tentang-kami p{
+    max-width: 800px;
+}
+
+.tentang-kami > *{
+    margin-top: 40px;
+}
+
+/* Servis kami */
+
+.container-servis{
+    width: 100%;
+    background-color: #252942;
+}
+
+.servis{
+    margin: 0 auto;
+    max-width: 1540px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 60px;
+}
+
+.servis > *{
+    margin-top: 20px;
+}
+
+.servis h3{
+    background-color: #ffcdab;
+    color: #FF6400;
+    padding: 12px 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.servis p{
+    max-width: 800px;
+}
+
+.gallery{
+    max-width: 1000px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly ;
+}
+
+.gallery img{
+    width: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* Hubungi kami */
+
+.container-hubungi-kami{
+    width: 100%;
+    background-color: white;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.hubungi-kami{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hubungi-kami > *{
+    margin-top: 15px;
+}
+
+.hubungi-kami a{
+    background-color: rgb(113, 201, 113);
+    padding: 20px 30px;
+    color: white;
+    display: block;
+    width: 25%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hubungi-kami h1{
+    font-size: 40px;
+}
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: #252942;
+    color: white;
+}
+
+.container-footer{
+    max-width: 1540px;
+    height: 350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: start center;
+    padding: 20px 10px;
+}
+
+.container-footer .logo{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.container-footer .sosmed{
+    display: flex;
+    align-items: start;
+}
+
+.container-footer .alamat-kontak{
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px){
+    html{
+        font-size: 90%;
+    } 
+}
+
+@media (max-width: 768px){
+    header{
+        background-color: red;
+    }
+
+    .hero{
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 500px){
+    
+}
