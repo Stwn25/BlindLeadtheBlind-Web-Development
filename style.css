@@ -382,7 +382,7 @@ footer{
         width: 10%;
     }
 
-}
+}   
 
 @media (max-width: 852px){
     header{
@@ -424,11 +424,11 @@ footer{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 110%;
         right: -100%;
-        background-color: rgb(230, 230, 230);
+        background-color: white;
         width: 250px;
-        height: 100vh;
+        height: 80vh;
         z-index: 2;
         overflow: hidden;
         transition: 0.3s;
@@ -436,10 +436,16 @@ footer{
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
-    }
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        border: 0.1px solid black;
+}
 
     .navigation ul.active{
-        right: 0;
+        right: 10px;
     }
 
     .navigation li{
@@ -466,10 +472,6 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         padding: 30px;
-    }
-
-    .hero img{
-        /* width: 75%; */
     }
 
     .hero-img{
@@ -547,11 +549,11 @@ footer{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 110%;
         right: -100%;
-        background-color: rgb(230, 230, 230);
+        background-color: white;
         width: 200px;
-        height: 100vh;
+        height: 80vh;
         z-index: 2;
         overflow: hidden;
         transition: 0.3s;
@@ -603,9 +605,6 @@ footer{
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-    }
-
-    .hubungi-kami h1{
     }
 
     .hubungi-kami > *{
