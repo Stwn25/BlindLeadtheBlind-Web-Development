@@ -260,7 +260,7 @@ article{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-content: space-evenly ;
+    align-content: space-evenly;
 }
 
 .gallery img{
@@ -298,8 +298,7 @@ article{
     background-color: rgb(113, 201, 113);
     padding: 20px 30px;
     color: white;
-    display: inline-block;
-    width: 25%;
+    display: block;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -308,7 +307,7 @@ article{
 }
 
 .hubungi-kami h1{
-    font-size: 40px;
+    /* font-size: 40px; */
 }
 /* Footer */
 
@@ -536,9 +535,14 @@ footer{
         padding: 60px 30px 0;
     }
 
+    .gallery > *{
+        margin-bottom: 20px;
+    }
+
+
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
 
     /* header */
     .navigation ul{
@@ -560,29 +564,43 @@ footer{
     /* hero section */
 
     .container-hero{
-        height: 550px;
+        min-height: 550px;
+    }
+
+    .hero{
+        max-width: 1540px;
+        margin: 0 auto;
+        min-height: 850px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
     }
 
     .teks-cta{
-        max-width: 400px;
-        margin-top: 40%;
+        max-width: 350px;
+        margin-top: 0;
+        order: 2;
     }
 
     .teks-cta a{
-        padding: 10px 20px;
+        padding: 20px 40px;
     }
 
 
     .hero-img{
-        max-width: 400px;
+        max-width: 450px;
+        order: 1;
+        margin: 20px 0 0;
     }
 
     .hero-img img{
-        width: 225%;
+        width: 100%;
     }
-    
-    .hero-img .abstrak{
-        margin-top: 30vw;
+
+    /* Servis kami */
+    .gallery > *{
+        margin-bottom: 20px;
     }
 
     /* hubungi kami */
@@ -591,10 +609,6 @@ footer{
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-    }
-
-    .hubungi-kami > *{
-        margin-left: 85px;
     }
 
     /* footer */
