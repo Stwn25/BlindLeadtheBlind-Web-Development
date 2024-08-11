@@ -545,6 +545,18 @@ footer{
         width: 200px;
     }
 
+    .brand-logo img{
+        width: 70%;
+    }
+
+    .whatsapp img{
+        width: 35%;
+    }
+
+    .navbar-extra{
+        margin-right: 25px;
+    }
+
     /* hero section */
 
     .container-hero{
@@ -597,11 +609,17 @@ footer{
         height: 350px;
         margin: 0 auto;
         display: grid;
-        grid-template-areas: 'logo sosmed'
+        grid-template-areas: 
+        'logo sosmed'
         'logo alamat';
         grid-template-columns: 1fr 1fr;
         place-items: start center;
         padding: 20px 10px;
+        font-size: 85%;
+    }
+
+    .container-footer img{
+        width: 80%;
     }
     
     .container-footer .logo{
