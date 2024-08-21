@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
+    <div class="overlay"></div>
     <header>
         <div class="header">
             <div class="brand-logo">
@@ -19,17 +20,79 @@
                 <i data-feather="search" class="btn-search"></i>
             </form>
             <div class="icon-extra">
-                <i data-feather="shopping-cart"></i>
+                <i data-feather="bell" id="notif-click"></i>
+                <i data-feather="shopping-cart" class="keranjang-click" id="keranjang-click"></i>
                 <i data-feather="user" class="profile-click" id="profile-click"></i>
             </div>
 
-            <div class="profile-user ">
+            <nav class="profile-user ">
                 <ul>
                     <li><a href="">Pengaturan</a></li>
                     <li><a href="">Pembelian</a></li>
                 </ul>
                 <button>Keluar</button>
-            </div>
+            </nav>
+
+            <nav class="keranjang-user">
+                <div class="header-keranjang">
+                    <ul>
+                        <li>Keranjang</li>
+                        <li>Lihat</li>
+                    </ul>
+                </div>
+                <div class="item-keranjang">
+                    <img src="../Image/sparepart.jpg" alt="">
+                    <ul>
+                        <li>Sparepart</li>
+                        <li>Lorem ipsum dolor...</li>
+                    </ul>
+                    <p>Rp100.000</p>
+                </div>
+                <div class="item-keranjang">
+                    <img src="../Image/sparepart.jpg" alt="">
+                    <ul>
+                        <li>Sparepart</li>
+                        <li>Lorem ipsum dolor...</li>
+                    </ul>
+                    <p>Rp100.000</p>
+                </div>
+                <div class="item-keranjang">
+                    <img src="../Image/sparepart.jpg" alt="">
+                    <ul>
+                        <li>Sparepart</li>
+                        <li>Lorem ipsum dolor...</li>
+                    </ul>
+                    <p>Rp100.000</p>
+                </div>
+                <div class="item-keranjang">
+                    <img src="../Image/sparepart.jpg" alt="">
+                    <ul>
+                        <li>Sparepart</li>
+                        <li>Lorem ipsum dolor...</li>
+                    </ul>
+                    <p>Rp100.000</p>
+                </div>
+            </nav>
+
+            <nav class="notif-user">
+                <div class="header-notif">
+                    <ul>
+                        <li>Notifikasi</li>
+                        <li data-feather="settings"></li>
+                    </ul>
+                </div>
+                <div class="bt-notif">
+                    <button class="bt-transaksi" id="bt-transaksi">Transaksi</button>
+                    <button class="bt-update" id="bt-update">Update</button>
+                </div>
+                <div class="transaksi">
+                    <p>ini transaksi</p>
+                </div>
+
+                <div class="update">
+                    <p>ini update</p>
+                </div>
+            </nav>
         </div>
     </header>
 
