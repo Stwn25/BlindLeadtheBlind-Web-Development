@@ -65,14 +65,14 @@ keranjang.addEventListener('mouseleave', () => {
 //Icon notification
 const notification = document.querySelector('.notif-user');
 const bt_transaksi = document.querySelector('.bt-transaksi');
-const bt_update = document.querySelector('.bt-update');
+const bt_pesan = document.querySelector('.bt-pesan');
 const transaksi = document.querySelector('.transaksi')
-const update = document.querySelector('.update')
+const pesan = document.querySelector('.pesan')
 
 document.querySelector('#notif-click').addEventListener('mouseenter', () => {
     notification.classList.add('active');
     overlay.style.display = notification.classList.contains('active') ? 'block' : 'none';
-    update.style.display = 'none';
+    pesan.style.display = 'none';
     transaksi.style.display = 'block';
     bt_transaksi.classList.add('active');
 });
@@ -82,7 +82,7 @@ document.querySelector('#notif-click').addEventListener('mouseleave', () => {
     timer = setTimeout(() => {
         notification.classList.remove('active');
         overlay.style.display = 'none';
-        bt_update.classList.remove('active')
+        bt_pesan.classList.remove('active')
     }, 150);
 });
 
@@ -96,37 +96,54 @@ notification.addEventListener('mouseenter', () => {
 notification.addEventListener('mouseleave', () => {
     notification.classList.remove('active');
     overlay.style.display = 'none';
-    bt_update.classList.remove('active')
+    bt_pesan.classList.remove('active')
 });
 
 
-//button transaksi dan update
+//button transaksi dan pesan
 document.querySelector('#bt-transaksi').addEventListener('mousedown', () => { //'mousedown' kondisi ketika click
     bt_transaksi.classList.add('active');
-    bt_update.classList.remove('active');
+    bt_pesan.classList.remove('active');
     transaksi.style.display = 'block';
-    update.style.display = 'none';
+    pesan.style.display = 'none';
 });
 
-document.querySelector('#bt-update').addEventListener('mousedown', () => {
-    bt_update.classList.add('active');
+document.querySelector('#bt-pesan').addEventListener('mousedown', () => {
+    bt_pesan.classList.add('active');
     bt_transaksi.classList.remove('active');
     transaksi.style.display = 'none';
-    update.style.display = 'block';
+    pesan.style.display = 'block';
 });
 
 // bt-masuk
 document.querySelector('.bt-masuk').addEventListener('mousedown', () => {
-    window.location.href = '../Authen Page/Login.html'
+    window.location.href = '../Authen-Page/Signin-Page/'
 });
 
-
+//filter kategori jenis barang
 const jenis_brg = document.querySelector('.jenis-brg');
+const chevron_down = document.querySelector('.chevron-down')
 
 document.querySelector('.header-aside').addEventListener('mousedown', () => {
     if(jenis_brg.style.display === 'none'){
-        jenis_brg.style.display = 'flex'
+        jenis_brg.style.display = 'flex';
+        chevron_down.classList.add('rotate-180');
     }else{
         jenis_brg.style.display = 'none'
+        chevron_down.classList.remove('rotate-180');
     }
+});
+
+
+//Klik button pada item produk
+
+// Pilih semua tombol "Beli" di dalam elemen dengan class "item"
+const bt_beli = document.querySelectorAll('.item article button');
+
+// Iterasi melalui setiap tombol yang ditemukan
+bt_beli.forEach(button => {
+    button.addEventListener('mousedown', () => {
+        // Arahkan pengguna ke halaman Detail-Produk-Page/
+        window.location.href = 'Detail-Produk-Page/';
+    });
 });

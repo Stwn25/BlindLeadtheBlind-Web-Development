@@ -299,7 +299,7 @@ header{
     color: #FF6400;
 }
 
-.bt-update.active{
+.bt-pesan.active{
     border-bottom: 2px solid #FF6400;
     color: #FF6400;
 }
@@ -309,148 +309,7 @@ header{
     overflow: auto;
 }
 
-.update{
+.pesan{
     height: 300px;
     overflow: auto;
 }
-
-/* container produk */
-
-.produk-kategori{
-    margin: 100px auto 20px;
-    max-width: 1280px;
-    min-height: 1540px;
-    display: grid;
-    grid-template-areas: 
-        'lbl-kategori lbl-produk'
-        'kategori produk';
-    grid-template-columns: 0.3fr 1fr;
-    grid-template-rows: 40px 1fr;
-    align-items: start;
-    gap: 10px 20px;
-}
-
-/* container-kiri aside */
-
-aside{
-    grid-area: kategori;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    box-shadow: 0 0 5px rgb(164, 163, 163);
-    background-color: white;
-    padding: 10px 20px;
-}
-
-.header-aside{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    border: solid red;
-}
-
-.jenis-brg{
-    display: flex;
-    flex-direction: column;
-    display: none;
-    margin: 10px 0 0 40px;
-}
-/* container-kanan */
-.produk{
-    grid-area: produk;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 25px;
-    justify-content: center;
-}
-
-.produk .item{
-    width: 200px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    overflow: hidden;
-}
-
-.item article{
-    padding: 0 4px;
-}
-
-.item article > *{
-    margin-bottom: 4px;
-}
-
-.item .description{
-    font-size: 80%;
-}
-
-.item img{
-    width: 100%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-article h3{
-    color: #FF6400;
-}
-
-article button{
-    padding: 15px 35px;
-    margin: 10px 0 0 95px;
-    background-color: #252942;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-family: "ABeeZee", sans-serif;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    cursor: pointer;
-}
-
-/* Footer */
-
-footer{
-    width: 100%;
-    background-color: #252942;
-    color: white;
-}
-
-.container-footer{
-    max-width: 1540px;
-    height: 350px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: start center;
-    padding: 20px 10px;
-}
-
-.container-footer .logo{
-    display: grid;
-    height: 100%;
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.container-footer .sosmed{
-    display: flex;
-    align-items: start;
-}
-
-.container-footer .alamat-kontak{
-    height: 100%;
-    display: grid;
-    align-items: center;
-}
-
-

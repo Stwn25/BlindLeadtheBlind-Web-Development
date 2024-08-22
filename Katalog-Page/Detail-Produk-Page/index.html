@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="Image/png" href="../../Image/favicon-3.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Sparepart</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="header">
+            <div class="brand-logo">
+                <img src="../../Image/favicon-3.png" alt="">
+            </div> 
+            <form action="" class="search">
+                <input type="text" class="input-keyword" placeholder="Cari barang...">
+                <i data-feather="search" class="btn-search"></i>
+            </form>
+            <div class="icon-extra">
+                <i data-feather="bell" id="notif-click"></i>
+                <i data-feather="shopping-cart" class="keranjang-click" id="keranjang-click"></i>
+                <i data-feather="user" class="profile-click" id="profile-click"></i>
+            </div>
+
+            <nav class="profile-user ">
+                <ul>
+                    <li>Hi, User</li>
+                    <li><a href="">Pengaturan</a></li>
+                    <li><a href="">Pembelian</a></li>
+                </ul>
+                <div class="bt-sign">
+                    <button class="bt-masuk">Masuk</button>
+                    <button class="bt-keluar">Keluar</button>
+                </div>
+            </nav>
+
+            <nav class="keranjang-user">
+                <div class="header-keranjang">
+                    <ul>
+                        <li>Keranjang</li>
+                        <li>Lihat</li>
+                    </ul>
+                </div>
+                <div class="item-keranjang">
+                    <img src="../../Image/sparepart.jpg" alt="">
+                    <ul>
+                        <li>Sparepart</li>
+                        <li>Lorem ipsum dolor...</li>
+                    </ul>
+                    <p>Rp100.000</p>
+                </div>
+                <div class="item-keranjang">
+                    <img src="../../Image/sparepart.jpg" alt="">
+                    <ul>
+                        <li>Sparepart</li>
+                        <li>Lorem ipsum dolor...</li>
+                    </ul>
+                    <p>Rp100.000</p>
+                </div>
+                <div class="item-keranjang">
+                    <img src="../../Image/sparepart.jpg" alt="">
+                    <ul>
+                        <li>Sparepart</li>
+                        <li>Lorem ipsum dolor...</li>
+                    </ul>
+                    <p>Rp100.000</p>
+                </div>
+                <div class="item-keranjang">
+                    <img src="../../Image/sparepart.jpg" alt="">
+                    <ul>
+                        <li>Sparepart</li>
+                        <li>Lorem ipsum dolor...</li>
+                    </ul>
+                    <p>Rp100.000</p>
+                </div>
+            </nav>
+
+            <nav class="notif-user">
+                <div class="header-notif">
+                    <ul>
+                        <li>Notifikasi</li>
+                        <li data-feather="settings"></li>
+                    </ul>
+                </div>
+                <div class="bt-notif">
+                    <button class="bt-transaksi" id="bt-transaksi">Transaksi</button>
+                    <button class="bt-pesan" id="bt-pesan">Pesan</button>
+                </div>
+                <div class="transaksi">
+                    <p>ini transaksi</p>
+                </div>
+
+                <div class="pesan">
+                    <p>ini Pesan</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <script>
+        feather.replace()
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
