@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #FF6400;
+}
+
+
+/* Container */
+.container{
+    max-width: 560px;
+    display: grid;
+    place-items: center;
+}
+
+/* header */
+.container header{
+    position: absolute;
+    top: 0px;
+}
+
+header .arrow-left{
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Form */
+
+.form{
+    width: 100%;
+    padding: 20px 0;
+    min-height: 100px;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr 1fr 1fr 0.5fr;
+    place-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 5px rgb(197, 196, 196);
+    row-gap: 10px;
+}
+
+.form > *{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form button{
+    width:80%;
+    height: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form .bt-daftar{
+    background-color: #FF6400;
+    color: white;
+}
+
+.form .bt-google {
+    background-color: transparent;
+    border: 0.1px solid rgb(198, 198, 198);
+}
+
+.form input{
+    width:80%;
+    height: 40px;
+    border: 0.1px solid rgb(197, 196, 196);
+    outline: none   ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 0 10px;
+    color: rgb(126, 126, 126);
+}
+
+.form input:focus{
+    border: 0.1px solid #FF6400 ;
+}
+
+.form p{
+    font-size: 80%;
+}
+
+.form a{
+    font-weight: bold;
+}
+
+.form .syarat{
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Footer */
+.container footer{
+    position: absolute;
+    bottom: 20px;
+    font-size: 85%;
+}

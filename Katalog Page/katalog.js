@@ -73,6 +73,7 @@ document.querySelector('#notif-click').addEventListener('mouseenter', () => {
     notification.classList.add('active');
     overlay.style.display = notification.classList.contains('active') ? 'block' : 'none';
     update.style.display = 'none';
+    transaksi.style.display = 'block';
     bt_transaksi.classList.add('active');
 });
 
@@ -112,4 +113,20 @@ document.querySelector('#bt-update').addEventListener('mousedown', () => {
     bt_transaksi.classList.remove('active');
     transaksi.style.display = 'none';
     update.style.display = 'block';
+});
+
+// bt-masuk
+document.querySelector('.bt-masuk').addEventListener('mousedown', () => {
+    window.location.href = '../Authen Page/Login.html'
+});
+
+
+const jenis_brg = document.querySelector('.jenis-brg');
+
+document.querySelector('.header-aside').addEventListener('mousedown', () => {
+    if(jenis_brg.style.display === 'none'){
+        jenis_brg.style.display = 'flex'
+    }else{
+        jenis_brg.style.display = 'none'
+    }
 });

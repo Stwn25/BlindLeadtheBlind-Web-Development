@@ -9,7 +9,6 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: #F0F3F7;
 }
 
 ul, li, a{
@@ -100,7 +99,7 @@ header{
     top: 90%;
     right: -100%;
     width: 150px;
-    height: 200px;
+    min-height: 280px;
     background-color: white;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -117,11 +116,11 @@ header{
 
 .profile-user ul > *{
     margin-bottom: 5px;
+    padding: 2px 5px;
 }
 
 .profile-user ul a{
     display: block;
-    padding: 2px 5px;
     color: #252942;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -134,9 +133,12 @@ header{
     background-color: #f2f2f2;
 }
 
-.profile-user button{
+.bt-sign{
+    margin-top: 95px;
+}
+
+.profile-user .bt-masuk{
     position: absolute;
-    bottom: 10px;
     width: 85%;
     padding: 8px 0;
     background-color: white;
@@ -149,6 +151,22 @@ header{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
+.profile-user .bt-keluar{
+    position: absolute;
+    margin-top: 40px;
+    width: 85%;
+    padding: 8px 0;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 
 /* Icon Keranjang navbar */
 .keranjang-user{
@@ -306,17 +324,16 @@ header{
     grid-template-areas: 
         'lbl-kategori lbl-produk'
         'kategori produk';
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-columns: 0.3fr 1fr;
     grid-template-rows: 40px 1fr;
     align-items: start;
     gap: 10px 20px;
 }
 
-/* container-kiri */
+/* container-kiri aside */
 
 aside{
     grid-area: kategori;
-    min-height: 700px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -324,8 +341,22 @@ aside{
     -o-border-radius: 10px;
     box-shadow: 0 0 5px rgb(164, 163, 163);
     background-color: white;
+    padding: 10px 20px;
 }
 
+.header-aside{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border: solid red;
+}
+
+.jenis-brg{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    margin: 10px 0 0 40px;
+}
 /* container-kanan */
 .produk{
     grid-area: produk;
@@ -343,7 +374,6 @@ aside{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 5px rgb(164, 163, 163);
 }
 
 .item article{
@@ -356,6 +386,15 @@ aside{
 
 .item .description{
     font-size: 80%;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 article h3{

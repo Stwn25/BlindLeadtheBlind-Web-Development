@@ -224,6 +224,7 @@ article{
 
 .tentang-kami p{
     max-width: 800px;
+    margin-bottom: 30px;
 }
 
 .tentang-kami > *{
