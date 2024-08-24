@@ -171,3 +171,16 @@ bt_filter.addEventListener('mousedown', () => {
         }
     });
 });
+
+//Klik button pada item produk
+
+// Pilih semua tombol "Beli" di dalam elemen dengan class "item"
+const bt_beli = document.querySelectorAll('.item article button');
+
+// Iterasi melalui setiap tombol yang ditemukan
+bt_beli.forEach(button => {
+    button.addEventListener('mousedown', () => {
+        // Arahkan pengguna ke halaman Detail-Produk-Page/
+        window.location.href = '../Detail-Produk-Page/';
+    });
+});
