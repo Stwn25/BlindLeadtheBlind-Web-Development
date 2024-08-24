@@ -127,10 +127,12 @@ const chevron_down = document.querySelector('.chevron-down')
 document.querySelector('.header-aside').addEventListener('mousedown', () => {
     if(jenis_brg.style.display === 'none'){
         jenis_brg.style.display = 'flex';
-        chevron_down.classList.add('rotate-180');
+        chevron_down.style.transform = 'rotate(180deg)';
+        chevron_down.style.transition = '0.3s ease';
     }else{
-        jenis_brg.style.display = 'none'
-        chevron_down.classList.remove('rotate-180');
+        jenis_brg.style.display = 'none';
+        chevron_down.style.transform = 'rotate(0deg)';
+        chevron_down.style.transition = '0.3s ease';
     }
 });
 

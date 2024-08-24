@@ -119,3 +119,55 @@ document.querySelector('#bt-pesan').addEventListener('mousedown', () => {
 document.querySelector('.bt-masuk').addEventListener('mousedown', () => {
     window.location.href = '../../Authen-Page/Signin-Page';
 });
+
+
+//Image gallery
+const mainImg = document.querySelector('.main-img');
+
+function changeMainImg(clickImg){   
+    mainImg.style.backgroundImage = `url(${clickImg.src})`;
+}
+
+
+//Pemesanan
+const bt_minus = document.querySelector('.minus');
+const bt_plus = document.querySelector('.plus');
+const value = document.querySelector('.count');
+let count = 1;
+
+
+bt_plus.addEventListener('mousedown', () => {
+    count++;
+    value.textContent = count;
+});
+
+bt_minus.addEventListener('mousedown', () => {
+    if( count > 1){
+        count--;
+        value.textContent = count;
+    }
+});
+
+
+//header filter ulasan
+const bt_filter = document.querySelector('.header-filter');
+const stars = document.querySelectorAll('.star')
+const chevron_down = document.querySelector('.chevron-down')
+const filter = document.querySelector('.filter-ulasan')
+
+bt_filter.addEventListener('mousedown', () => {
+    stars.forEach(star => {
+        if(star.style.display === 'none'){
+            star.style.display = 'flex';
+            chevron_down.style.transform = 'rotate(180deg)';
+            chevron_down.style.transition = '0.3s ease';
+            filter.style.height = '220px';
+        }
+        else{
+            star.style.display = 'none';
+            chevron_down.style.transform = 'rotate(0deg)';
+            chevron_down.style.transition = '0.3s ease';
+            filter.style.height = '55px';
+        }
+    });
+});
